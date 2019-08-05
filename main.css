@@ -1,0 +1,216 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+ * poject code
+ */
+
+body{
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+    color: #111;
+}
+.wrapper{
+    width: 950px;
+    margin-left:  auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+header{
+    display: flex;
+}
+h1{
+    font-size:21px;
+    margin-bottom: 24px;
+    width:300px;
+}
+.help{
+    width:100px;
+    text-align: right;
+    font-size:12px;
+    margin-left: auto;
+    padding-top: 14px;
+}
+.basic-link{
+    color: #666;
+    text-decoration: none;
+}
+.basic-link:hover{
+    text-decoration: underline;
+}
+h3{
+    font-size:14px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    border-left: 8px solid #378ce3;
+    padding-left: 6px;
+}
+textarea{
+    /*font-family: 'Courier New', Courier, monospace;*/
+    font-family: Courier, monospace;
+    width:100%;
+    height:200px;
+    font-size:14px;
+    vertical-align: bottom;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 12px;
+    line-height: 140%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    /*background: #222;*/
+    /*color: #fff;*/
+}
+.simple-button{
+    width:100px;
+    height:40px;
+    background: #eaeaea;
+    text-align: center;
+    padding-top: 14px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size:14px;
+    border-radius: 3px;
+    user-select: none;
+}
+.simple-button:hover{
+    background: #eeeeee;
+}
+.simple-button:active{
+    background: #cccccc;
+}
+.input-area{
+    margin-bottom: 30px;
+}
+.input-area-buttons{
+    display: flex;
+}
+.indent-input-area{
+    margin-right: 35px;
+    font-size: 14px;
+    display: flex;
+}
+.indent-input-area .label{
+    display: inline-block;
+    margin-right: 12px;
+    padding-top: 15px;
+}
+.numstepper{
+    width:50px;
+    text-align: right;
+    font-size: 14px;
+    padding:8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.indent-up-down-button-container{
+    margin-left: 5px;
+}
+.numstepper-up-down-button{
+    color: #777;
+    border: 1px solid #ccc;
+    font-size:11px;
+    text-align: center;
+    width:20px;
+    height:20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 3px;
+    padding-top: 4px;
+    user-select: none;
+}
+.numstepper-up-down-button:hover{
+    background: #eeeeee;
+}
+.numstepper-up-down-button:active{
+    background: #cccccc;
+}
+#clear_button{
+    margin-right: 10px;
+}
+#paste_button{
+    margin-right: 35px;
+    visibility: hidden;
+}
+#format_button{
+    width:160px;
+    margin-right: 35px;
+    background: #378ce3;
+    color: #fff;
+}
+#format_button:hover{
+    background: #65abf3;
+}
+#format_button:active{
+    background: #0c66c1;
+}
+#copy_button{
+    margin-right: 16px;
+}
+.toast-label{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding-top:14px;
+    font-size: 14px;
+}
+#output_json_textarea{
+    height:600px;
+    margin-bottom: 0;
+}
+#output_json_textarea.error{
+    color:#ff0000;
+}
+footer{
+    padding-top:40px;
+}
+.copyright{
+    font-size:12px;
+    color:#666;
+}
